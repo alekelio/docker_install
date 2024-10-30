@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Checkout') { // добавим новый Stage
             steps {
-                git branch: 'main', url: "https://github.com/Esserg/docker-install.git" // используем встроенный в Jenkins плагин Git для скачивания проекта из бранча main
+                git branch: 'main', url: "https://github.com/alekelio/docker_install.git" // используем встроенный в Jenkins плагин Git для скачивания проекта из бранча main
             }
         }
         stage('Deploy') {
