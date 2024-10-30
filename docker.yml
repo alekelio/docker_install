@@ -2,6 +2,6 @@ docker:
   hosts:
     vdocker:
       ansible_host: docker
-      ansible_ssh_host: 192.168.56.3
-      ansible_user: alex 
-      ansible_ssh_private_key: /home/alex/.ssh/id_ed25519.pub
+      ansible_ssh_host: 192.168.56.4
+      ansible_user: kol 
+      ansible_ssh_private_key: /var/lib/jenkins/.ssh/id_ed25519
