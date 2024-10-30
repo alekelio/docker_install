@@ -8,7 +8,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                sh 'ansible-playbook docker-install.yml' // поскольку скрипты работают в одной папке, на втором шаге мы можем просто запустить плейбук
+                sh 'ansible-playbook docker-install.yml -i docker.yml' // поскольку скрипты работают в одной папке, на втором шаге мы можем просто запустить плейбук
             }
         }
     }
